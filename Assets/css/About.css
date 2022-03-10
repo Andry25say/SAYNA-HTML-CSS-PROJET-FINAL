@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #d35649;
+  --primary-gray: #98a5a5;
+  --primary-blue: #509bd7;
+  --gray-footer: #1f1f1f;
+  --gray-footer-btn: #444;
+  --primary-purple: #575a89;
+  --light-gray: #eee;
+  --dark-sombre: #050505;
+}
+header {
+  background-color: var(--primary-color);
+}
+header h1,
+a,
+h2,
+header p,
+footer i {
+  color: var(--light-gray);
+}
+#image-svg {
+  width: 25%;
+}
+/* fin header*/
+/* les styles en section 1 */
+#section1 {
+  box-shadow: 0 0 50px #444;
+}
+#section1 p,
+footer,
+#section2 h2 {
+  color: var(--gray-footer);
+}
+span,
+#section1 i {
+  color: var(--primary-blue);
+}
+#section3 {
+  background-color: var(--dark-sombre);
+}
+#lien-rouge1,
+#lien-rouge2,
+h1,
+#section1 h1 i {
+  color: var(--primary-color);
+}
