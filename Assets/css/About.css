@@ -8,15 +8,26 @@
   --light-gray: #eee;
   --dark-sombre: #050505;
 }
-header {
+.bg-header {
   background-color: var(--primary-color);
 }
-header h1,
-a,
+#en-tete i {
+  margin-right: 10px;
+}
+span a,
 h2,
-header p,
-footer i {
+#footpart1 a,
+#en-tete a,
+#en-tete i,
+#footpart2 i,
+#footpart1 p,
+svg,
+input {
   color: var(--light-gray);
+}
+#footpart1 a {
+  text-decoration: none;
+  margin: 0 15px;
 }
 #image-svg {
   width: 25%;
@@ -24,23 +35,47 @@ footer i {
 /* fin header*/
 /* les styles en section 1 */
 #section1 {
-  box-shadow: 0 0 50px #444;
+  box-shadow: 0 0 10px #444;
+}
+#section1 .col {
+  border: 1px solid var(--primary-gray);
+  padding: 1%;
+  margin: 1%;
 }
 #section1 p,
-footer,
 #section2 h2 {
   color: var(--gray-footer);
+}
+#section1 button {
+  width: 11rem;
 }
 span,
 #section1 i {
   color: var(--primary-blue);
 }
-#section3 {
+#footpart1 {
   background-color: var(--dark-sombre);
 }
 #lien-rouge1,
 #lien-rouge2,
 h1,
-#section1 h1 i {
-  color: var(--primary-color);
+#section1 h1 i,
+#section2 h3 {
+  color: var(--primary-color) !important;
+}
+#footpart1 h2 {
+  margin-bottom: 15px;
+}
+#footpart2 {
+  background-color: var(--gray-footer);
+}
+input {
+  border-radius: 3px;
+  background-color: var(--gray-footer-btn);
+}
+#lien-rouge1:hover,
+#lien-rouge2:hover,
+#footpart1 a:hover,
+#footpart1 input:hover {
+  color: var(--primary-gray);
 }
