@@ -23,52 +23,54 @@
   <body>
     <!-----------------------------------LE HEADER------------------------------------>
 
-    <nav id="en-tete" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="en-tete" class="navbar navbar-light bg-light">
       <div class="container-fluid bg-header">
         <!-- debut du nav logo image -->
-        <a class="navbar-brand ms-4" href="#"
-          ><img src="Assets/Images/group-2.svg" alt="" height="50px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="text-light mt-3 fs-3"
-          ><a href="index.html">[Events]</a></span
-        >
+           <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <a class="ms-4" href="#"
+              ><img src="Assets/Images/group-2.svg" alt="" height="50px"
+            /></a>
+            <span class="text-light fs-2 pt-5"
+              ><a href="index.html" class="text-decoration-none"
+                >[Events]</a
+              ></span
+            >
+          </div>
+
         <!-- fin du nav logo image -->
         <!-- debut des nav items  -->
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav offset-8">
-            <li class="nav-item">
-              <a class="nav-link" href="Search.html"
-                ><i class="fa-solid fa-magnifying-glass"></i>Search</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About.html"
-                ><i class="fa-solid fa-user"></i>About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa-solid fa-rss"></i>Blog</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa-solid fa-bars"></i>More</a
-              >
-            </li>
-          </ul>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <ul
+              class="d-flex list-unstyled justify-content-center justify-content-md-end align-items-center"
+            >
+              <li>
+                <a href="Search.html" class="text-decoration-none">
+                  <i class="fa-solid fa-magnifying-glass"></i
+                  ><span class="d-md-inline-block d-none">Search</span>
+                </a>
+              </li>
+              <li>
+                <a href="About.html" class="text-decoration-none"
+                  ><i class="fa-solid fa-user"></i
+                  ><span class="d-md-inline-block d-none">About</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-rss"></i
+                  ><span class="d-md-inline-block d-none">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-bars"></i>
+                  <span class="d-md-inline-block d-none">More</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- fin des nav items  -->
       </div>
@@ -77,22 +79,23 @@
     <!-- debut de la section1-->
     <div id="section1" class="container-fluid">
       <div id="imagedfond" class="row">
-        <h3 class="text-center text-light text-uppercase">
-          <a href="" class="text-light">[Events]</a>...Your get way to connect
+        <h3 class="text-center text-light text-uppercase mb-5">
+          [Events]...Your get way to connect
           with events around your area
         </h3>
-        <div class="row p-2 bg">
-          <h6 class="mt-1 text-center">SEARCH EVENTS NEARBY</h6>
+        <div class="row p-3 bg">
+          <h6 class="mt-4 text-center">SEARCH EVENTS NEARBY</h6>
           <div class="input-group"></div>
           <input
             type="search"
-            class="form-control rounded"
+            class="form-control rounded w-75"
             placeholder="Search"
+            
           />
-          <button type="button" class="btn btn-danger">search</button>
+          <button type="button" class="btn btn-danger w-25">search</button>
         </div>
         <p class="text-center">
-          <button type="button" class="btn btn-light fw-700">
+          <button type="button" class="btn btn-light fw-bold mt-5 my-md-3 w-25">
             How it works
           </button>
         </p>
@@ -100,23 +103,21 @@
     </div>
     <!-- fin de la section1-->
     <!-- debut de la section2 -->
-    <div id="section2" class="container-fluid">
-      <h5 class="text-center">
-        <a href="">[Events]</a>works in four simple steps
-      </h5>
+    <div id="section2" class="container-fluid d-none d-md-block mt-5 mt-md-2">
+      <h4 class="text-center  mt-md-3">[Events]works in four simple steps</h4>
       <div class="row">
         <div class="col text-center">
           <i class="fa-solid fa-magnifying-glass-location"></i>
-          <p>1-Locate</p>
+          <h5>1-Locate</h5>
           <p>
-            It's simple, on <a href="">[Events]</a>homepage, enter the name of
-            the location you want to spend some good quality time with people<br />and
-            click on search.
+            It's simple, on [Events]homepage, enter the name of the location you
+            want to spend some good quality time with people<br />and click on
+            search.
           </p>
         </div>
         <div class="col text-center">
           <i class="fa-solid fa-check-double"></i>
-          <p>2-Confirm or create</p>
+          <h5>2-Confirm or create</h5>
           <p>
             Go to check the events nearby the location you searched for and
             apply for any [Events] available. Every [gathering] has a <br />
@@ -129,7 +130,7 @@
         <div class="row">
           <div class="col text-center">
             <i class="fa-solid fa-map-location"></i>
-            <p>3-Go!</p>
+            <h5>3-Go!</h5>
             <p>
               select the [Events], wait for the scheduled day and go! Be
               prepared to meet new people, create new connections and have a
@@ -137,7 +138,8 @@
             </p>
           </div>
           <div class="col text-center">
-            <p>4-Have a good time</p>
+            <i class="fa-solid fa-users"></i>
+            <h5>4-Have a good time</h5>
             <p>
               Once you are at the [Events] location, look for the host, enjoy
               and have fun!
@@ -147,64 +149,72 @@
       </div>
     </div>
     <!-- fin de la section 2 -->
-    <!-- debut de la section 3 -->
-    <div id="part1section3" class="row text-center hauteur">
-      <div class="col-lg-8">
-        <p><a href="">[Events]</a> near you</p>
+    <!-- Premiere partie de la section 3 -->
+    <div id="part1section3" class="row text-center text-light p-4 hauteur">
+      <div class="col-12 col-md-8 text-start">
+        <p class="mb-4 fw-bold">[Events] near you</p>
         <p>
           Every month a new you might find [Events] near you and enjoy the
           company with people whom you can share mutual interests
         </p>
+        <a href="Search.html"
+        class="text-decoration-none"><button type="button" class="btn btn-light fw-bold d-none d-md-block">
+            Find a [Events]
+          </button></a
+        >
       </div>
-      <div class="col-lg-4">
+      <div class="col-12 col-md-4">
         <img
           src="Assets/Images/group-2.jpg"
           alt=""
-          class="border rounded-circle image"
+          class="border rounded-circle  d-none d-md-block  image"
         />
       </div>
     </div>
-    <!-- fin de la section 3 -->
-    <!-- debut de la section 4 -->
-    <div id="part2section3" class="row text-center hauteur">
-      <div class="col-lg-8">
-        <p><a href="">[Events]</a>Connecting you</p>
+    <!-- fin de la premiere partie de la section 3 -->
+    <!-- debut de la deuxieme partie section 3 -->
+    <div id="part2section3" class="row text-center text-light p-4 hauteur">
+      <div class="col-12 col-md-8 text-start">
+        <p class="mb-4 fw-bold">[Events] Connecting you</p>
         <p>
           You can create [Events] events around your area and share them with
           people you know and with whoever wants to connect
         </p>
+        <a href="Search.html" class="text-decoration-none">
+          <button type="button" class="btn btn-light fw-bold d-none d-md-block">
+            Learn more about [Events]
+          </button>
+        </a>
       </div>
-      <div class="col-lg-4">
+      <div class="col-12 col-md-4">
         <img
           src="Assets/Images/group-3.jpg"
           alt=""
-          class="border rounded-circle image"
+          class="border rounded-circle d-none d-md-block image"
         />
       </div>
     </div>
-    <!-- fin de la section 4 -->
-    <!-- debut de la section 5-->
-    <div id="part3section3" class="row text-center hauteur">
-      <div class="col-lg-8">
-        <p><a href="">[Events]</a>Spreading love</p>
+    <!-- fin de la deuxieme partie section 3 -->
+    <!-- debut de la troisieme partie section 3-->
+    <div id="part3section3" class="row text-center text-light p-4 hauteur">
+      <div class="col-12 col-md-8 text-start">
+        <p class="mb-4 fw-bold">[Events]Spreading love</p>
         <p>
-          <a href="">[Events]</a> let you meet new people, share interests and
-          spreading love
+          [Events] let you meet new people, share interests and spreading love
         </p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-12 col-md-4">
         <img
           src="Assets/Images/group-4.jpg"
           alt=""
-          class="border rounded-circle image"
+          class="border rounded-circle  d-none d-md-block  image"
         />
       </div>
     </div>
-    <!-- fin de la section 5 -->
+    <!-- fin de la section 3 -->
     <!------------------------------------------FOOTER-------------------------------------------->
-
     <!--Le premier partier du footer -->
-    <div id="footpart1" class="container-fluid px-5">
+    <div id="footpart1" class="d-none d-md-block container-fluid px-5">
       <div class="row">
         <div class="col-5">
           <ul

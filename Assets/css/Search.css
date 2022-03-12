@@ -7,14 +7,19 @@
   --primary-purple: #575a89;
   --light-gray: #eee;
   --dark-sombre: #050505;
+  --doret: #f2e0c262;
 }
-
+/* styles pour le header */
 .bg-header {
   background-color: var(--primary-color);
 }
 #en-tete i {
   margin-right: 10px;
 }
+#en-tete ul {
+  gap: 2%;
+}
+/* styles communs */
 span a,
 h2,
 #footpart1 a,
@@ -25,6 +30,51 @@ h2,
 svg {
   color: var(--light-gray);
 }
+#lien-rouge1:hover,
+#lien-rouge2:hover,
+#footpart1 a:hover,
+#footpart1 input:hover {
+  color: var(--primary-gray);
+}
+h1,
+h3 {
+  color: var(--primary-gray);
+}
+/* styles pour la section forms seulement*/
+#section-forms {
+  background-color: var(--doret);
+}
+select {
+  width: 100px;
+}
+#section-forms label,
+#section-forms input {
+  font-size: small;
+}
+#section-forms input,
+select {
+  width: 90px;
+  opacity: 0.5;
+}
+.search {
+  font-size: medium;
+}
+.clear {
+  width: 100px;
+  height: 35px;
+  font-size: medium;
+}
+/* styles pour la section image */
+#section-images img {
+  background-color: var(--primary-color);
+}
+.imagedfond {
+  background-color: var(--primary-color);
+}
+#section-images p {
+  text-shadow: 0 0 3px;
+}
+/* styles pour le footer */
 #footpart1 a {
   text-decoration: none;
   margin: 0 15px;
@@ -41,12 +91,6 @@ svg {
 }
 #footpart2 {
   background-color: var(--gray-footer);
-}
-#lien-rouge1:hover,
-#lien-rouge2:hover,
-#footpart1 a:hover,
-#footpart1 input:hover {
-  color: var(--primary-gray);
 }
 #footpart1 input {
   border-radius: 3px;

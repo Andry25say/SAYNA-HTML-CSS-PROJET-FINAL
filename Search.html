@@ -22,63 +22,154 @@
   </head>
   <body>
     <!-----------------------------------LE HEADER------------------------------------>
+  
+   <nav id="en-tete" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid bg-header">
+         <!-- debut du nav logo image -->
+    <div class="col-12 col-md-4 text-center text-md-start mb-4 mb-md-0">
+      <a class="ms-4" href="#"
+        ><img src="Assets/Images/group-2.svg" alt="" height="50px"
+      /></a>
+      <span class="text-light fs-2 pt-5"
+        ><a href="index.html" class="text-decoration-none"
+          >[Events]</a
+        ></span
+      >
+    </div>
 
-    <nav id="en-tete" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid bg-header">
-        <!-- debut du nav logo image -->
-        <a class="navbar-brand ms-4" href="#"
-          ><img src="Assets/Images/group-2.svg" alt="" height="50px"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="text-light mt-3 fs-3"
-          ><a href="index.html">[Events]</a></span
-        >
         <!-- fin du nav logo image -->
         <!-- debut des nav items  -->
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav offset-8">
-            <li class="nav-item">
-              <a class="nav-link" href="Search.html"
-                ><i class="fa-solid fa-magnifying-glass"></i>Search</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About.html"
-                ><i class="fa-solid fa-user"></i>About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa-solid fa-rss"></i>Blog</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="fa-solid fa-bars"></i>More</a
-              >
-            </li>
-          </ul>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <ul
+              class="d-flex list-unstyled justify-content-center justify-content-md-end align-items-center"
+            >
+              <li>
+                <a href="Search.html" class="text-decoration-none">
+                  <i class="fa-solid fa-magnifying-glass"></i
+                  ><span class="d-md-inline-block d-none">Search</span>
+                </a>
+              </li>
+              <li>
+                <a href="About.html" class="text-decoration-none"
+                  ><i class="fa-solid fa-user"></i
+                  ><span class="d-md-inline-block d-none">About</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-rss"></i
+                  ><span class="d-md-inline-block d-none">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-bars"></i>
+                  <span class="d-md-inline-block d-none">More</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
         <!-- fin des nav items  -->
       </div>
     </nav>
     <!------------------------------------FIN DE L'HEADER----------------------------->
-
-    <!------------------------------------------FOOTER-------------------------------------------->
+    <!-------------------------debut de la section forms------------------------------->
+    <div id="section-forms" class="container-fluid">
+      <div class="container m-3">
+        <h1 class="text-center pb-4">
+          Filter by location, host, subject, date, daytime
+        </h1>
+        <div class="row ">
+          <div class="col-12 col-md-1  text-center text-md-normal offset-md-2">
+            <label for="locate" class="fw-bold"> Location</label> <br />
+            <input type="text" id="locate" name="locate" class="w-100"/>
+          </div>
+          <div class="col-12 col-md-1 text-center text-md-normal">
+            <label for="host" class="fw-bold" >Host</label><br />
+            <input type="text" id="host" name="host" class="w-100"/>
+          </div>
+          <div class="col-6 col-md-1">
+            <label for="Sujet" class="fw-bold">Subject </label><br />
+            <input type="text" id="host" name="host" class="w-100" />
+          </div>
+          <div class="col-6 col-md-1">
+            <label for="initial" class="fw-bold" >Initial date</label> <br />
+            <input
+              type="date"
+              id="initial"
+              name="initial-date"
+              value="2020-06-18"
+              class="w-100"
+            />
+          </div>
+          <div class="col-4 col-md-1">
+            <label for="Final" class="fw-bold" class="fw-bold">Final date</label> <br />
+            <input
+              type="date"
+              id="Final"
+              name="final-date"
+              value="2020-06-18"
+              class="w-100"
+            />
+          </div>
+          <div class="col-4 col-md-1 pt-1">
+            <label for="choix" class="d-block fw-bold">Daytime</label>
+            <select name="choix" id="choix"  class="w-100"></select>
+          </div>
+          <div class="col-4 col-md-4 d-flex pt-3">
+            <p></p>
+            <a
+              href="#"
+              class="btn btn-primary disabled search me-2"
+              tabindex="-1"
+              role="button"
+              aria-disabled="true"
+              >Search</a
+            >
+            <a
+              href="#"
+              class="btn btn-warning disabled text-light clear"
+              tabindex="-1"
+              role="button"
+              aria-disabled="true"
+              >Clear filter</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------fin de la section forms------------------------------->
+    <!------------------------debut de la section image------------------------->
+    <div id="section-images" class="container p-5">
+      <h3 class="text-center mt-5">Search Result found 7 [Events] Nearby.</h3>
+      <div class="row p-5">
+        <div class="col-12 col-md-4  mb-3 mb-md-0 position-relative">
+          <img src="Assets/Images/group-2.svg" alt="" class="img-fluid" />
+          <p class="position-absolute top-0 text-light fw-bold fs-5">
+            go to [gathering] example
+          </p>
+        </div>
+        <div class="col-12 col-md-4  mb-3 mb-md-0 position-relative">
+          <img src="Assets/Images/group-2.svg" alt="" class="img-fluid" />
+          <p class="position-absolute top-0 text-light fw-bold fs-5">
+            go to [gathering] example
+          </p>
+        </div>
+        <div class="col-12 col-md-4  mb-3 mb-md-0 position-relative">
+          <img src="Assets/Images/group-2.svg" alt="" class="img-fluid" />
+          <p class="position-absolute top-0 text-light fw-bold fs-5">
+            go to [gathering] example
+          </p>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------FOOTER------------------------------------->
 
     <!--Le premier partier du footer -->
-    <div id="footpart1" class="container-fluid px-5">
+    <div id="footpart1" class="d-none d-md-block container-fluid px-5">
       <div class="row">
         <div class="col-5">
           <ul

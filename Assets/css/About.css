@@ -8,12 +8,17 @@
   --light-gray: #eee;
   --dark-sombre: #050505;
 }
+/* styles pour le header */
 .bg-header {
   background-color: var(--primary-color);
 }
 #en-tete i {
   margin-right: 10px;
 }
+#en-tete ul {
+  gap: 2%;
+}
+/* styles communes */
 span a,
 h2,
 #footpart1 a,
@@ -25,36 +30,14 @@ svg,
 input {
   color: var(--light-gray);
 }
-#footpart1 a {
-  text-decoration: none;
-  margin: 0 15px;
-}
-#image-svg {
-  width: 25%;
-}
-/* fin header*/
-/* les styles en section 1 */
-#section1 {
-  box-shadow: 0 0 10px #444;
-}
-#section1 .col {
-  border: 1px solid var(--primary-gray);
-  padding: 1%;
-  margin: 1%;
-}
 #section1 p,
 #section2 h2 {
   color: var(--gray-footer);
 }
-#section1 button {
-  width: 11rem;
-}
-span,
-#section1 i {
-  color: var(--primary-blue);
-}
-#footpart1 {
-  background-color: var(--dark-sombre);
+
+#footpart1 a {
+  text-decoration: none;
+  margin: 0 15px;
 }
 #lien-rouge1,
 #lien-rouge2,
@@ -62,6 +45,35 @@ h1,
 #section1 h1 i,
 #section2 h3 {
   color: var(--primary-color) !important;
+}
+#lien-rouge1:hover,
+#lien-rouge2:hover,
+#footpart1 a:hover,
+#footpart1 input:hover {
+  color: var(--primary-gray);
+}
+#section1 span,
+#section1 i {
+  color: var(--primary-blue);
+}
+/* les styles en section 1 */
+#section1 {
+  box-shadow: 0 0 10px #444;
+}
+.bordure {
+  border: 1px solid var(--primary-gray);
+  padding: 1%;
+  margin:2%;
+}
+#section1 button {
+  width: 11rem;
+}
+/* styles pour le footer */
+#footpart1 {
+  background-color: var(--dark-sombre);
+}
+#image-svg {
+  width: 25%;
 }
 #footpart1 h2 {
   margin-bottom: 15px;
@@ -72,10 +84,4 @@ h1,
 input {
   border-radius: 3px;
   background-color: var(--gray-footer-btn);
-}
-#lien-rouge1:hover,
-#lien-rouge2:hover,
-#footpart1 a:hover,
-#footpart1 input:hover {
-  color: var(--primary-gray);
 }

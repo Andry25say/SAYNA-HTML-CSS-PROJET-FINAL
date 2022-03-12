@@ -8,14 +8,19 @@
   --light-gray: #eee;
   --dark-sombre: #050505;
 }
-
+/* styles pour le header */
+#en-tete i {
+  margin-right: 10px;
+}
+#en-tete ul {
+  gap: 2%;
+}
+/* les styles communes*/
 .bg-header,
 #part1section3 {
   background-color: var(--primary-color);
 }
-#en-tete i {
-  margin-right: 10px;
-}
+
 span a,
 h2,
 #footpart1 a,
@@ -26,13 +31,63 @@ h2,
 svg {
   color: var(--light-gray);
 }
+/* styles pour la section1 */
+#imagedfond {
+  height: 50vh;
+  margin-top: -8px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../Images/group-1.jpg");
+}
+.bg {
+  width: 50%;
+  margin: auto;
+  height: 20vh;
+  background-color: rgba(235, 227, 227, 0.829);
+}
+#imagedfond input {
+  width: 85%;
+  height: 35%;
+}
+#imagedfond button {
+  width: 15%;
+  height: 35%;
+}
+h3 {
+  transform: translateY(40px);
+  text-shadow: 0 0 10px var(--gray-footer);
+}
+
+/* styles pour la section 2 */
+#section2 p {
+  font-size: 0.7rem;
+}
+h5 {
+  font-weight: bold;
+}
+/* styles pour la section 3 */
+#part2section3 {
+  background-color: var(--primary-gray);
+}
+#part3section3 {
+  background-color: var(--primary-blue);
+}
+.hauteur {
+  height: 30vh;
+  align-items: center;
+}
+.hauteur img {
+  width: 70%;
+}
+/* styles pour le footer */
 #footpart1 a {
-  text-decoration: none;
   margin: 0 15px;
+  text-decoration: none;
 }
 #footpart1 {
   background-color: var(--dark-sombre);
 }
+h4,
 #lien-rouge1,
 #lien-rouge2 {
   color: var(--primary-color) !important;
@@ -52,49 +107,4 @@ svg {
 #footpart1 input {
   border-radius: 3px;
   background-color: var(--gray-footer-btn);
-}
-/* ------- */
-#imagedfond {
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../Images/group-1.jpg");
-  margin-top: -8px;
-}
-.bg {
-  background-color: rgba(235, 227, 227, 0.829);
-  width: 50%;
-  margin: auto;
-  height: 20vh;
-}
-#imagedfond input {
-  width: 90%;
-  height: 45%;
-}
-#imagedfond button {
-  width: 10%;
-  height: 45%;
-}
-h3 {
-  transform: translateY(40px);
-  text-shadow: 0 0 10px var(--gray-footer);
-}
-#section2 p {
-  font-size: 0.7rem;
-}
-.image {
-  width: 50%;
-}
-#part2section3 {
-  background-color: var(--primary-gray);
-}
-#part3section3 {
-  background-color: var(--primary-blue);
-}
-.hauteur {
-  height: 40vh;
-  align-items: center;
-}
-.hauteur img {
-  width: 70%;
 }
