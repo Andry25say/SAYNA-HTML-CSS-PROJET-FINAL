@@ -33,7 +33,6 @@ svg {
 }
 /* styles pour la section1 */
 #imagedfond {
-  height: 50vh;
   margin-top: -8px;
   background-size: cover;
   background-position: center;
@@ -42,16 +41,13 @@ svg {
 .bg {
   width: 50%;
   margin: auto;
-  height: 20vh;
   background-color: rgba(235, 227, 227, 0.829);
 }
 #imagedfond input {
-  width: 85%;
-  height: 35%;
+  width: 35rem;
 }
 #imagedfond button {
-  width: 15%;
-  height: 35%;
+  width: 8rem;
 }
 h3 {
   transform: translateY(40px);
@@ -73,12 +69,9 @@ h5 {
   background-color: var(--primary-blue);
 }
 .hauteur {
-  height: 30vh;
   align-items: center;
 }
-.hauteur img {
-  width: 70%;
-}
+
 /* styles pour le footer */
 #footpart1 a {
   margin: 0 15px;
@@ -107,4 +100,8 @@ h4,
 #footpart1 input {
   border-radius: 3px;
   background-color: var(--gray-footer-btn);
+}
+.rond{
+  width: 150px;
+  height: 150px;
 }
